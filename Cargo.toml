@@ -1,0 +1,12 @@
+[package]
+name = "pic2color4px"
+version = "0.1.0"
+edition = "2021"
+description = "Convert photos to 8-colour images (RGB on/off) with 2x2-cell pattern dithering — for MSX-era hardware, colour e-paper and other few-colour displays."
+license = "MIT"
+
+[dependencies]
+image = { version = "0.25", default-features = false, features = ["png", "jpeg"] }
+
+[profile.release]
+opt-level = 3
